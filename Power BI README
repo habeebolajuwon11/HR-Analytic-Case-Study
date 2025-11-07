@@ -1,0 +1,47 @@
+# 📊 Power BI HR Analytics Dashboard
+
+This folder contains the **interactive Power BI dashboard** built for the  
+*Employee Performance and Retention: HR Analytics Case Study.*
+
+The dashboard visually represents employee trends, performance metrics,  
+and attrition patterns across departments.
+
+---
+
+## 🧩 Dashboard Pages Overview
+
+### 🟦 **Page 1 — Overview Dashboard**
+- Displays total employees, attrition rate, and salary distribution  
+- Department-level attrition analysis and gender breakdown  
+
+### 🟩 **Page 2 — Performance Dashboard**
+- Relationship between performance evaluation, workload, and attrition  
+- Identifies burnout risks based on project load  
+
+### 🟥 **Page 3 — Attrition Drivers**
+- Salary level, promotion rate, and work accident correlations  
+- Attrition by tenure and department insights  
+
+---
+
+## ⚙️ How to Use
+1. Download the `.pbix` file (`HR_Dashboard.pbix`).  
+2. Open it in **Microsoft Power BI Desktop**.  
+3. Use slicers and filters to explore insights interactively.  
+4. Connect to the HR dataset (if required) and refresh visuals.  
+
+---
+
+## 🧠 Key Features
+- Custom DAX measures for Attrition %, Promotion %, and Evaluation Impact  
+- Fully interactive dashboards linked by synchronized slicers  
+- Department-wise attrition heatmap  
+- Performance vs. Retention analysis  
+
+---
+
+### 👤 Author
+**Habeeb Sulaimon**  
+📊 Data Analyst | SQL | Power BI | Python  
+📧 [habeebolajuwon11@gmail.com](mailto:habeebolajuwon11@gmail.com)  
+🔗 [LinkedIn](https://linkedin.com/in/habeeb-sulaimon-6268a9341)
