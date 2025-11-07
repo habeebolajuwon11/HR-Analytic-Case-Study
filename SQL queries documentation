@@ -1,0 +1,40 @@
+# 🧠 HR Analytics SQL Queries
+
+This folder contains all the SQL scripts used in the **Employee Performance and Retention: HR Analytics Case Study**.  
+Each query was designed to uncover critical workforce insights from the HR dataset.
+
+---
+
+## 🧾 Overview
+
+| Query Name | Description | Key Insight |
+|-------------|--------------|-------------|
+| `01_total_employees.sql` | Counts total number of employees. | Overall company size. |
+| `02_attrition_count.sql` | Calculates how many employees left and stayed. | Attrition vs retention volume. |
+| `03_attrition_rate.sql` | Determines overall attrition rate in %. | Company-wide turnover rate. |
+| `04_department_attrition.sql` | Attrition grouped by department. | Identifies departments with highest turnover. |
+| `05_salary_vs_attrition.sql` | Attrition by salary level. | Relationship between pay grade and retention. |
+| `06_tenure_attrition.sql` | Attrition by years at company. | Finds early-career turnover trends. |
+| `07_projects_vs_attrition.sql` | Attrition by number of projects handled. | Reveals burnout and workload impact. |
+| `08_promotion_vs_attrition.sql` | Attrition based on promotions. | Links growth opportunity to retention. |
+| `09_accident_vs_attrition.sql` | Attrition by work accident occurrence. | Safety-related attrition patterns. |
+| `10_evaluation_vs_attrition.sql` | Attrition by performance evaluation scores. | Shows performance-retention correlation. |
+
+---
+
+## 🧩 Usage
+
+1. Import your HR dataset into a SQL environment (MySQL, PostgreSQL, or MS SQL Server).  
+2. Run each query sequentially to explore key employee insights.  
+3. Combine these outputs in Power BI or Excel to build a complete HR analytics dashboard.
+
+---
+
+## ⚙️ Example: Calculate Attrition Rate
+
+```sql
+SELECT 
+    ROUND(
+        100.0 * SUM(CASE WHEN left = 1 THEN 1 ELSE 0 END) / COUNT(*), 2
+    ) AS attrition_rate_percent
+FROM hr_data;
